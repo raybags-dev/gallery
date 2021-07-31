@@ -11,10 +11,8 @@ const App = () => {
   return (
     <AuthProvider>
       <Router>
-        <div>
-          <Route exact path="/login" component={Login} />
-          <Route path="/" component={Home} />
-        </div>
+        <Route exact path="/login" component={Login} />
+        <Route path="/" component={Home} />
       </Router>
     </AuthProvider>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { withRouter } from "react-router";
 
 import { projectAuth } from "../firebase/config";
@@ -10,6 +10,11 @@ import Model from "../comps/Model";
 
 const Home = ({ history }) => {
   const [selectedImg, setSelectedImg] = useState(null);
+  const buttonRef = useRef(null);
+
+  useEffect(() => {
+    buttonRef.current.click();
+  }, []);
 
   const handleSignOut = () => {
     history.push("/login");
@@ -18,7 +23,7 @@ const Home = ({ history }) => {
 
   return (
     <div className="App">
-      <button className="logout-btn" onClick={handleSignOut}>
+      <button ref={buttonRef} className="logout-btn" onClick={handleSignOut}>
         Logout
       </button>
       <Title />
