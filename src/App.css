@@ -38,12 +38,9 @@ body {
   -ms-user-select: none;
   user-select: none;
   scroll-behavior: smooth;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
-    url("https://github.com/raybags-web-dev/image_base/blob/master/images/f2.jpeg?raw=true")
-      center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(5, 0, 0, 0.1)),
+    url("https://github.com/raybags-web-dev/image_base/blob/master/images/nature2.jpeg?raw=true")
+      bottom/cover no-repeat fixed;
 }
 
 /* scroll track and bar styles */
@@ -68,7 +65,7 @@ body {
 .title h1 {
   position: -webkit-sticky;
   position: sticky;
-  color: var(--black);
+  color: var(--red);
   opacity: 0.7;
   font-size: 1.2rem;
   letter-spacing: 2px;
@@ -102,7 +99,7 @@ body {
 .title h2,
 .title p {
   text-align: center;
-  color: var(--black);
+  color: var(--white);
 }
 .title h2 {
   position: relative;
@@ -111,7 +108,7 @@ body {
   width: -moz-max-content;
   width: max-content;
   margin: auto;
-  color: var(--black);
+  color: var(--white);
   opacity: 0.8;
   margin-top: 60px;
 }
@@ -170,7 +167,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--green);
+  color: var(--white);
   font-weight: 700;
   text-align: center;
   width: 100%;
@@ -182,11 +179,11 @@ body {
 }
 .label:hover {
   background: transparent;
-  color: var(--white);
+  color: var(--red);
   transition: 0.2s;
 }
 .label:hover span {
-  background: var(--primary);
+  background: var(--red);
   color: var(--white);
   width: 80%;
   height: 80%;
@@ -375,7 +372,7 @@ body {
       rgba(255, 255, 255, 0.5) 0%,
       rgba(255, 255, 255, 0.5) 50%
     ),
-    url("https://github.com/raybags-web-dev/image_base/blob/master/images/f2.jpeg?raw=true")
+    url("https://github.com/raybags-web-dev/image_base/blob/master/images/nature2.jpeg?raw=true")
       top/cover no-repeat fixed;
 }
 .login-wrapper {
@@ -545,7 +542,7 @@ body {
   border: 1px solid rgb(167, 167, 167);
   outline: none;
   font-size: 1.3em;
-  color: var(--black);
+  color: var(--white);
   font-style: italic;
   font-weight: lighter;
   box-shadow: var(--deep-shadow);
@@ -554,6 +551,8 @@ body {
 }
 .logout-btn:hover {
   background-color: rgba(42, 42, 42, 0.4);
+  color: var(--red);
+  transition: var(--standard-transition);
 }
 .logout-btn:active {
   background-color: rgba(69, 69, 70, 0.5);
